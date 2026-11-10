@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+/* PamojaHome design tokens (design system: project/tokens.json). */
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+
+  --color-brand: #6d28d9;          /* violet-600: primary actions */
+  --color-brand-500: #7c3aed;
+  --color-brand-900: #4c1d95;
+  --color-brand-100: #ede9fe;
+  --color-accent: #db2777;         /* pink-600 */
+  --color-sun: #ffd23f;            /* yellow-400 */
+  --color-sun-200: #ffe8a3;
+  --color-sun-ink: #6b4a00;
+  --color-ink: #1e1b3a;
+  --color-muted: #5b5675;
+  --color-page: #f7f4ff;
+  --color-track: #f1ecfd;
+  --color-line: #e4dcf7;           /* card borders */
+  --color-control: #8a7fb5;        /* input borders, 3:1 on white */
+  --color-good: #0f766e;
+  --color-good-100: #ccfbf1;
+  --color-warn-100: #ffe8a3;
+}
+
+@layer base {
+  html { background: var(--color-page); color: var(--color-ink); }
+  body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+  h1, h2, h3 { font-family: var(--font-display); }
+  :focus-visible { outline: 3px solid var(--color-brand-500); outline-offset: 2px; }
+}

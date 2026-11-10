@@ -1,0 +1,2194 @@
+{
+  "baseline": {
+    "label": "Baseline",
+    "households": 2000,
+    "weeks": 12,
+    "seed": 20261110,
+    "headlineVariant": "workload_half",
+    "metrics": {
+      "giniAssigned": {
+        "rotation": 0.04924655910819222,
+        "workload": 0.034182916272789854,
+        "diff": -0.015063642835402326,
+        "ci95": [
+          -0.016488953521804385,
+          -0.013638332149000265
+        ],
+        "effectSizeDz": -0.46319252491805085,
+        "workloadBetterShare": 0.651,
+        "tieShare": 0.0035
+      },
+      "giniCompleted": {
+        "rotation": 0.09118900262199742,
+        "workload": 0.05015366970076892,
+        "diff": -0.041035332921228386,
+        "ci95": [
+          -0.04269938782823522,
+          -0.03937127801422155
+        ],
+        "effectSizeDz": -1.0807652756497428,
+        "workloadBetterShare": 0.881,
+        "tieShare": 0
+      },
+      "meanWeeklyGapE": {
+        "rotation": 1.246762499999998,
+        "workload": 0.62699513888889,
+        "diff": -0.6197673611111107,
+        "ci95": [
+          -0.637070498883597,
+          -0.6024642233386245
+        ],
+        "effectSizeDz": -1.5698021116679322,
+        "workloadBetterShare": 0.9645,
+        "tieShare": 0.007
+      },
+      "boundHeldRate": {
+        "rotation": 0.08962500000000023,
+        "workload": 0.9981250000000004,
+        "diff": 0.9085000000000057,
+        "ci95": [
+          0.9028106879245874,
+          0.9141893120754241
+        ],
+        "effectSizeDz": 6.99852065070982,
+        "workloadBetterShare": 0.9995,
+        "tieShare": 0.0005
+      },
+      "completionRate": {
+        "rotation": 0.7608850874307003,
+        "workload": 0.7789345396862482,
+        "diff": 0.018049452255551,
+        "ci95": [
+          0.016967285749247107,
+          0.019131618761854895
+        ],
+        "effectSizeDz": 0.7309892872426564,
+        "workloadBetterShare": 0.746,
+        "tieShare": 0.0715
+      },
+      "dislikedShare": {
+        "rotation": 0.2517450799732909,
+        "workload": 0.07837879958960597,
+        "diff": -0.17336628038368485,
+        "ci95": [
+          -0.17702466611057732,
+          -0.16970789465679237
+        ],
+        "effectSizeDz": -2.076902986979589,
+        "workloadBetterShare": 0.9855,
+        "tieShare": 0.004
+      },
+      "preferredShare": {
+        "rotation": 0.24971097099139952,
+        "workload": 0.5028512083252051,
+        "diff": 0.2531402373338052,
+        "ci95": [
+          0.247186286055918,
+          0.25909418861169237
+        ],
+        "effectSizeDz": 1.8633609079357076,
+        "workloadBetterShare": 0.9855,
+        "tieShare": 0.002
+      },
+      "overloadedShare": {
+        "rotation": 0.04885297619047622,
+        "workload": 0.004308333333333334,
+        "diff": -0.04454464285714288,
+        "ci95": [
+          -0.04930184772903913,
+          -0.03978743798524663
+        ],
+        "effectSizeDz": -0.4103785945795205,
+        "workloadBetterShare": 0.203,
+        "tieShare": 0.785
+      },
+      "fallbackRate": {
+        "rotation": 0,
+        "workload": 0.0035283103656886202,
+        "diff": 0.0035283103656886202,
+        "ci95": [
+          0.0032502133196220494,
+          0.003806407411755191
+        ],
+        "effectSizeDz": 0.5560469696667059,
+        "workloadBetterShare": 0,
+        "tieShare": 0.608
+      }
+    },
+    "variants": {
+      "workload": {
+        "label": "Workload-aware (missed = 0)",
+        "missedWeight": 0,
+        "metrics": {
+          "giniAssigned": {
+            "rotation": 0.04924655910819222,
+            "workload": 0.06819298018579875,
+            "diff": 0.01894642107760672,
+            "ci95": [
+              0.01712107676827642,
+              0.02077176538693702
+            ],
+            "effectSizeDz": 0.45490788273143656,
+            "workloadBetterShare": 0.2885,
+            "tieShare": 0.0035
+          },
+          "giniCompleted": {
+            "rotation": 0.09118900262199742,
+            "workload": 0.025668392985920472,
+            "diff": -0.06552060963607688,
+            "ci95": [
+              -0.06726114369589782,
+              -0.06378007557625594
+            ],
+            "effectSizeDz": -1.649819669105423,
+            "workloadBetterShare": 0.9645,
+            "tieShare": 0
+          },
+          "meanWeeklyGapE": {
+            "rotation": 1.246762499999998,
+            "workload": 1.0074909722222216,
+            "diff": -0.23927152777777794,
+            "ci95": [
+              -0.25703241914419084,
+              -0.22151063641136504
+            ],
+            "effectSizeDz": -0.5904285346388113,
+            "workloadBetterShare": 0.7295,
+            "tieShare": 0.0185
+          },
+          "boundHeldRate": {
+            "rotation": 0.08962500000000023,
+            "workload": 0.9975000000000009,
+            "diff": 0.9078750000000056,
+            "ci95": [
+              0.9022080470357767,
+              0.9135419529642346
+            ],
+            "effectSizeDz": 7.021299888420235,
+            "workloadBetterShare": 1,
+            "tieShare": 0
+          },
+          "completionRate": {
+            "rotation": 0.7608850874307003,
+            "workload": 0.77540589799853,
+            "diff": 0.014520810567832594,
+            "ci95": [
+              0.013425907592709792,
+              0.015615713542955396
+            ],
+            "effectSizeDz": 0.5812410752494427,
+            "workloadBetterShare": 0.698,
+            "tieShare": 0.077
+          },
+          "dislikedShare": {
+            "rotation": 0.2517450799732909,
+            "workload": 0.07800448840133835,
+            "diff": -0.17374059157195232,
+            "ci95": [
+              -0.17740040347272987,
+              -0.17008077967117477
+            ],
+            "effectSizeDz": -2.0805760955141186,
+            "workloadBetterShare": 0.985,
+            "tieShare": 0.0055
+          },
+          "preferredShare": {
+            "rotation": 0.24971097099139952,
+            "workload": 0.5046692679938645,
+            "diff": 0.2549582970024639,
+            "ci95": [
+              0.2490546609592055,
+              0.26086193304572236
+            ],
+            "effectSizeDz": 1.8927386368696983,
+            "workloadBetterShare": 0.987,
+            "tieShare": 0.0015
+          },
+          "overloadedShare": {
+            "rotation": 0.04885297619047622,
+            "workload": 0.08791428571428546,
+            "diff": 0.0390613095238096,
+            "ci95": [
+              0.03233678686307634,
+              0.045785832184542866
+            ],
+            "effectSizeDz": 0.25458124787806563,
+            "workloadBetterShare": 0.1145,
+            "tieShare": 0.558
+          },
+          "fallbackRate": {
+            "rotation": 0,
+            "workload": 0.0034973174836666478,
+            "diff": 0.0034973174836666478,
+            "ci95": [
+              0.003205169670165874,
+              0.0037894652971674214
+            ],
+            "effectSizeDz": 0.5246546087677151,
+            "workloadBetterShare": 0,
+            "tieShare": 0.6215
+          }
+        }
+      },
+      "workload_half": {
+        "label": "Workload-aware (missed = ½)",
+        "missedWeight": 0.5,
+        "metrics": {
+          "giniAssigned": {
+            "rotation": 0.04924655910819222,
+            "workload": 0.034182916272789854,
+            "diff": -0.015063642835402326,
+            "ci95": [
+              -0.016488953521804385,
+              -0.013638332149000265
+            ],
+            "effectSizeDz": -0.46319252491805085,
+            "workloadBetterShare": 0.651,
+            "tieShare": 0.0035
+          },
+          "giniCompleted": {
+            "rotation": 0.09118900262199742,
+            "workload": 0.05015366970076892,
+            "diff": -0.041035332921228386,
+            "ci95": [
+              -0.04269938782823522,
+              -0.03937127801422155
+            ],
+            "effectSizeDz": -1.0807652756497428,
+            "workloadBetterShare": 0.881,
+            "tieShare": 0
+          },
+          "meanWeeklyGapE": {
+            "rotation": 1.246762499999998,
+            "workload": 0.62699513888889,
+            "diff": -0.6197673611111107,
+            "ci95": [
+              -0.637070498883597,
+              -0.6024642233386245
+            ],
+            "effectSizeDz": -1.5698021116679322,
+            "workloadBetterShare": 0.9645,
+            "tieShare": 0.007
+          },
+          "boundHeldRate": {
+            "rotation": 0.08962500000000023,
+            "workload": 0.9981250000000004,
+            "diff": 0.9085000000000057,
+            "ci95": [
+              0.9028106879245874,
+              0.9141893120754241
+            ],
+            "effectSizeDz": 6.99852065070982,
+            "workloadBetterShare": 0.9995,
+            "tieShare": 0.0005
+          },
+          "completionRate": {
+            "rotation": 0.7608850874307003,
+            "workload": 0.7789345396862482,
+            "diff": 0.018049452255551,
+            "ci95": [
+              0.016967285749247107,
+              0.019131618761854895
+            ],
+            "effectSizeDz": 0.7309892872426564,
+            "workloadBetterShare": 0.746,
+            "tieShare": 0.0715
+          },
+          "dislikedShare": {
+            "rotation": 0.2517450799732909,
+            "workload": 0.07837879958960597,
+            "diff": -0.17336628038368485,
+            "ci95": [
+              -0.17702466611057732,
+              -0.16970789465679237
+            ],
+            "effectSizeDz": -2.076902986979589,
+            "workloadBetterShare": 0.9855,
+            "tieShare": 0.004
+          },
+          "preferredShare": {
+            "rotation": 0.24971097099139952,
+            "workload": 0.5028512083252051,
+            "diff": 0.2531402373338052,
+            "ci95": [
+              0.247186286055918,
+              0.25909418861169237
+            ],
+            "effectSizeDz": 1.8633609079357076,
+            "workloadBetterShare": 0.9855,
+            "tieShare": 0.002
+          },
+          "overloadedShare": {
+            "rotation": 0.04885297619047622,
+            "workload": 0.004308333333333334,
+            "diff": -0.04454464285714288,
+            "ci95": [
+              -0.04930184772903913,
+              -0.03978743798524663
+            ],
+            "effectSizeDz": -0.4103785945795205,
+            "workloadBetterShare": 0.203,
+            "tieShare": 0.785
+          },
+          "fallbackRate": {
+            "rotation": 0,
+            "workload": 0.0035283103656886202,
+            "diff": 0.0035283103656886202,
+            "ci95": [
+              0.0032502133196220494,
+              0.003806407411755191
+            ],
+            "effectSizeDz": 0.5560469696667059,
+            "workloadBetterShare": 0,
+            "tieShare": 0.608
+          }
+        }
+      },
+      "workload_full": {
+        "label": "Workload-aware (missed = 1)",
+        "missedWeight": 1,
+        "metrics": {
+          "giniAssigned": {
+            "rotation": 0.04924655910819222,
+            "workload": 0.017401467592691806,
+            "diff": -0.03184509151550032,
+            "ci95": [
+              -0.03318908011283061,
+              -0.030501102918170035
+            ],
+            "effectSizeDz": -1.038455738827135,
+            "workloadBetterShare": 0.913,
+            "tieShare": 0.0035
+          },
+          "giniCompleted": {
+            "rotation": 0.09118900262199742,
+            "workload": 0.07516340460691438,
+            "diff": -0.016025598015082958,
+            "ci95": [
+              -0.017725942549344904,
+              -0.014325253480821011
+            ],
+            "effectSizeDz": -0.4130649912809367,
+            "workloadBetterShare": 0.6525,
+            "tieShare": 0.0005
+          },
+          "meanWeeklyGapE": {
+            "rotation": 1.246762499999998,
+            "workload": 0.4487423611111114,
+            "diff": -0.7980201388888893,
+            "ci95": [
+              -0.8173697234805712,
+              -0.7786705542972074
+            ],
+            "effectSizeDz": -1.8075206980533822,
+            "workloadBetterShare": 0.984,
+            "tieShare": 0.004
+          },
+          "boundHeldRate": {
+            "rotation": 0.08962500000000023,
+            "workload": 0.9983333333333338,
+            "diff": 0.9087083333333393,
+            "ci95": [
+              0.903041368594222,
+              0.9143752980724567
+            ],
+            "effectSizeDz": 7.0277300975864465,
+            "workloadBetterShare": 1,
+            "tieShare": 0
+          },
+          "completionRate": {
+            "rotation": 0.7608850874307003,
+            "workload": 0.7825584702418321,
+            "diff": 0.021673382811134127,
+            "ci95": [
+              0.020570777575746622,
+              0.02277598804652163
+            ],
+            "effectSizeDz": 0.861485010199838,
+            "workloadBetterShare": 0.794,
+            "tieShare": 0.056
+          },
+          "dislikedShare": {
+            "rotation": 0.2517450799732909,
+            "workload": 0.07125348658842648,
+            "diff": -0.1804915933848644,
+            "ci95": [
+              -0.18422118765725273,
+              -0.17676199911247606
+            ],
+            "effectSizeDz": -2.1209794623532203,
+            "workloadBetterShare": 0.9855,
+            "tieShare": 0.0055
+          },
+          "preferredShare": {
+            "rotation": 0.24971097099139952,
+            "workload": 0.517626360790244,
+            "diff": 0.26791538979884466,
+            "ci95": [
+              0.26173473129040353,
+              0.2740960483072858
+            ],
+            "effectSizeDz": 1.8997829520287683,
+            "workloadBetterShare": 0.9885,
+            "tieShare": 0.0025
+          },
+          "overloadedShare": {
+            "rotation": 0.04885297619047622,
+            "workload": 0.0006636904761904761,
+            "diff": -0.04818928571428574,
+            "ci95": [
+              -0.05291871981429027,
+              -0.04345985161428121
+            ],
+            "effectSizeDz": -0.4465626374678324,
+            "workloadBetterShare": 0.2155,
+            "tieShare": 0.7835
+          },
+          "fallbackRate": {
+            "rotation": 0,
+            "workload": 0.003051878950804948,
+            "diff": 0.003051878950804948,
+            "ci95": [
+              0.0027803931132291816,
+              0.003323364788380714
+            ],
+            "effectSizeDz": 0.4926757636388439,
+            "workloadBetterShare": 0,
+            "tieShare": 0.6595
+          }
+        }
+      }
+    },
+    "bySizeVariant": "workload_half",
+    "bySize": {
+      "2": {
+        "rotation": 0.045059616027572434,
+        "workload": 0.025313677290888566,
+        "diff": -0.019745938736683864,
+        "ci95": [
+          -0.02434309338881463,
+          -0.015148784084553099
+        ],
+        "effectSizeDz": -0.4852454756422754,
+        "workloadBetterShare": 0.6877076411960132,
+        "tieShare": 0.019933554817275746
+      },
+      "3": {
+        "rotation": 0.02949229215487064,
+        "workload": 0.030251110301589536,
+        "diff": 0.0007588181467189127,
+        "ci95": [
+          -0.0019378027183592455,
+          0.003455439011797071
+        ],
+        "effectSizeDz": 0.03319856776697067,
+        "workloadBetterShare": 0.47101449275362317,
+        "tieShare": 0.0036231884057971015
+      },
+      "4": {
+        "rotation": 0.055727291055676226,
+        "workload": 0.0323240572061356,
+        "diff": -0.02340323384954064,
+        "ci95": [
+          -0.0276179189594551,
+          -0.019188548739626183
+        ],
+        "effectSizeDz": -0.6424300724638916,
+        "workloadBetterShare": 0.7421602787456446,
+        "tieShare": 0
+      },
+      "5": {
+        "rotation": 0.038232166511498876,
+        "workload": 0.03380165979130357,
+        "diff": -0.0044305067201952965,
+        "ci95": [
+          -0.007115541143847305,
+          -0.0017454722965432883
+        ],
+        "effectSizeDz": -0.19157427162080184,
+        "workloadBetterShare": 0.5157894736842106,
+        "tieShare": 0
+      },
+      "6": {
+        "rotation": 0.06050644244774406,
+        "workload": 0.03660658755904487,
+        "diff": -0.023899854888699196,
+        "ci95": [
+          -0.02751716808083669,
+          -0.020282541696561702
+        ],
+        "effectSizeDz": -0.7501655069686229,
+        "workloadBetterShare": 0.7684563758389261,
+        "tieShare": 0
+      },
+      "7": {
+        "rotation": 0.04643689141919212,
+        "workload": 0.03922787875375398,
+        "diff": -0.00720901266543816,
+        "ci95": [
+          -0.009984915293881924,
+          -0.004433110036994396
+        ],
+        "effectSizeDz": -0.30806780077216106,
+        "workloadBetterShare": 0.5860805860805861,
+        "tieShare": 0
+      },
+      "8": {
+        "rotation": 0.06854360700613334,
+        "workload": 0.0423880635240388,
+        "diff": -0.026155543482094583,
+        "ci95": [
+          -0.029928570578221354,
+          -0.02238251638596781
+        ],
+        "effectSizeDz": -0.8119903728412029,
+        "workloadBetterShare": 0.7714285714285715,
+        "tieShare": 0
+      }
+    }
+  },
+  "high_skip": {
+    "label": "Less reliable members",
+    "households": 2000,
+    "weeks": 12,
+    "seed": 20261111,
+    "headlineVariant": "workload_half",
+    "metrics": {
+      "giniAssigned": {
+        "rotation": 0.04765592551018043,
+        "workload": 0.04377838467108594,
+        "diff": -0.003877540839094521,
+        "ci95": [
+          -0.00528371020053295,
+          -0.0024713714776560917
+        ],
+        "effectSizeDz": -0.12085366438392618,
+        "workloadBetterShare": 0.5075,
+        "tieShare": 0.004
+      },
+      "giniCompleted": {
+        "rotation": 0.12863591674265012,
+        "workload": 0.08247168582172816,
+        "diff": -0.04616423092092176,
+        "ci95": [
+          -0.04814687334853455,
+          -0.04418158849330898
+        ],
+        "effectSizeDz": -1.0204747955547384,
+        "workloadBetterShare": 0.852,
+        "tieShare": 0.0005
+      },
+      "meanWeeklyGapE": {
+        "rotation": 1.2245868055555582,
+        "workload": 0.6987513888888882,
+        "diff": -0.5258354166666661,
+        "ci95": [
+          -0.5419938888279523,
+          -0.5096769445053799
+        ],
+        "effectSizeDz": -1.4262334339647087,
+        "workloadBetterShare": 0.9465,
+        "tieShare": 0.007
+      },
+      "boundHeldRate": {
+        "rotation": 0.09033333333333363,
+        "workload": 0.998041666666667,
+        "diff": 0.9077083333333392,
+        "ci95": [
+          0.9021070241294408,
+          0.9133096425372377
+        ],
+        "effectSizeDz": 7.1022809629951045,
+        "workloadBetterShare": 1,
+        "tieShare": 0
+      },
+      "completionRate": {
+        "rotation": 0.5998584899330219,
+        "workload": 0.627594132083981,
+        "diff": 0.027735642150959316,
+        "ci95": [
+          0.026390269743738586,
+          0.029081014558180046
+        ],
+        "effectSizeDz": 0.9035179448897195,
+        "workloadBetterShare": 0.8025,
+        "tieShare": 0.0395
+      },
+      "dislikedShare": {
+        "rotation": 0.251184907997797,
+        "workload": 0.08011193203498687,
+        "diff": -0.17107297596281007,
+        "ci95": [
+          -0.1746542049919508,
+          -0.16749174693366933
+        ],
+        "effectSizeDz": -2.0935839861024355,
+        "workloadBetterShare": 0.9825,
+        "tieShare": 0.006
+      },
+      "preferredShare": {
+        "rotation": 0.24976687774744352,
+        "workload": 0.50304173108216,
+        "diff": 0.25327485333471644,
+        "ci95": [
+          0.2473255574893324,
+          0.25922414918010045
+        ],
+        "effectSizeDz": 1.865810703286465,
+        "workloadBetterShare": 0.9865,
+        "tieShare": 0.004
+      },
+      "overloadedShare": {
+        "rotation": 0.041929166666666746,
+        "workload": 0.016716666666666668,
+        "diff": -0.02521250000000001,
+        "ci95": [
+          -0.029704294687262524,
+          -0.020720705312737495
+        ],
+        "effectSizeDz": -0.24600112183101772,
+        "workloadBetterShare": 0.1775,
+        "tieShare": 0.76
+      },
+      "fallbackRate": {
+        "rotation": 0,
+        "workload": 0.0034119200196033096,
+        "diff": 0.0034119200196033096,
+        "ci95": [
+          0.003112202162478969,
+          0.00371163787672765
+        ],
+        "effectSizeDz": 0.4989158448821511,
+        "workloadBetterShare": 0,
+        "tieShare": 0.629
+      }
+    },
+    "variants": {
+      "workload": {
+        "label": "Workload-aware (missed = 0)",
+        "missedWeight": 0,
+        "metrics": {
+          "giniAssigned": {
+            "rotation": 0.04765592551018043,
+            "workload": 0.10264430954894299,
+            "diff": 0.05498838403876236,
+            "ci95": [
+              0.0527459593244501,
+              0.057230808753074625
+            ],
+            "effectSizeDz": 1.0747171008309406,
+            "workloadBetterShare": 0.137,
+            "tieShare": 0.001
+          },
+          "giniCompleted": {
+            "rotation": 0.12863591674265012,
+            "workload": 0.0373409165072699,
+            "diff": -0.09129500023538023,
+            "ci95": [
+              -0.09351848319152081,
+              -0.08907151727923965
+            ],
+            "effectSizeDz": -1.7995099935353578,
+            "workloadBetterShare": 0.972,
+            "tieShare": 0
+          },
+          "meanWeeklyGapE": {
+            "rotation": 1.2245868055555582,
+            "workload": 1.2880604166666674,
+            "diff": 0.06347361111111119,
+            "ci95": [
+              0.043105888392729455,
+              0.08384133382949292
+            ],
+            "effectSizeDz": 0.13658147742934826,
+            "workloadBetterShare": 0.4445,
+            "tieShare": 0.0195
+          },
+          "boundHeldRate": {
+            "rotation": 0.09033333333333363,
+            "workload": 0.9964583333333348,
+            "diff": 0.906125000000006,
+            "ci95": [
+              0.9005016310499105,
+              0.9117483689501014
+            ],
+            "effectSizeDz": 7.062079588984007,
+            "workloadBetterShare": 1,
+            "tieShare": 0
+          },
+          "completionRate": {
+            "rotation": 0.5998584899330219,
+            "workload": 0.6183267750283491,
+            "diff": 0.018468285095326827,
+            "ci95": [
+              0.017086160203619992,
+              0.019850409987033663
+            ],
+            "effectSizeDz": 0.5856260071113939,
+            "workloadBetterShare": 0.7015,
+            "tieShare": 0.062
+          },
+          "dislikedShare": {
+            "rotation": 0.251184907997797,
+            "workload": 0.08297932222543654,
+            "diff": -0.16820558577236058,
+            "ci95": [
+              -0.1717631684912209,
+              -0.16464800305350027
+            ],
+            "effectSizeDz": -2.072175241623664,
+            "workloadBetterShare": 0.9865,
+            "tieShare": 0.0015
+          },
+          "preferredShare": {
+            "rotation": 0.24976687774744352,
+            "workload": 0.5000010959856364,
+            "diff": 0.2502342182381928,
+            "ci95": [
+              0.2443657761726422,
+              0.2561026603037434
+            ],
+            "effectSizeDz": 1.8688091377796616,
+            "workloadBetterShare": 0.986,
+            "tieShare": 0.005
+          },
+          "overloadedShare": {
+            "rotation": 0.041929166666666746,
+            "workload": 0.1709720238095231,
+            "diff": 0.12904285714285685,
+            "ci95": [
+              0.12184709781844956,
+              0.13623861646726412
+            ],
+            "effectSizeDz": 0.7859563273925098,
+            "workloadBetterShare": 0.0485,
+            "tieShare": 0.3795
+          },
+          "fallbackRate": {
+            "rotation": 0,
+            "workload": 0.003841342567679605,
+            "diff": 0.003841342567679605,
+            "ci95": [
+              0.003526693808929423,
+              0.004155991326429787
+            ],
+            "effectSizeDz": 0.5350545845155926,
+            "workloadBetterShare": 0,
+            "tieShare": 0.6025
+          }
+        }
+      },
+      "workload_half": {
+        "label": "Workload-aware (missed = ½)",
+        "missedWeight": 0.5,
+        "metrics": {
+          "giniAssigned": {
+            "rotation": 0.04765592551018043,
+            "workload": 0.04377838467108594,
+            "diff": -0.003877540839094521,
+            "ci95": [
+              -0.00528371020053295,
+              -0.0024713714776560917
+            ],
+            "effectSizeDz": -0.12085366438392618,
+            "workloadBetterShare": 0.5075,
+            "tieShare": 0.004
+          },
+          "giniCompleted": {
+            "rotation": 0.12863591674265012,
+            "workload": 0.08247168582172816,
+            "diff": -0.04616423092092176,
+            "ci95": [
+              -0.04814687334853455,
+              -0.04418158849330898
+            ],
+            "effectSizeDz": -1.0204747955547384,
+            "workloadBetterShare": 0.852,
+            "tieShare": 0.0005
+          },
+          "meanWeeklyGapE": {
+            "rotation": 1.2245868055555582,
+            "workload": 0.6987513888888882,
+            "diff": -0.5258354166666661,
+            "ci95": [
+              -0.5419938888279523,
+              -0.5096769445053799
+            ],
+            "effectSizeDz": -1.4262334339647087,
+            "workloadBetterShare": 0.9465,
+            "tieShare": 0.007
+          },
+          "boundHeldRate": {
+            "rotation": 0.09033333333333363,
+            "workload": 0.998041666666667,
+            "diff": 0.9077083333333392,
+            "ci95": [
+              0.9021070241294408,
+              0.9133096425372377
+            ],
+            "effectSizeDz": 7.1022809629951045,
+            "workloadBetterShare": 1,
+            "tieShare": 0
+          },
+          "completionRate": {
+            "rotation": 0.5998584899330219,
+            "workload": 0.627594132083981,
+            "diff": 0.027735642150959316,
+            "ci95": [
+              0.026390269743738586,
+              0.029081014558180046
+            ],
+            "effectSizeDz": 0.9035179448897195,
+            "workloadBetterShare": 0.8025,
+            "tieShare": 0.0395
+          },
+          "dislikedShare": {
+            "rotation": 0.251184907997797,
+            "workload": 0.08011193203498687,
+            "diff": -0.17107297596281007,
+            "ci95": [
+              -0.1746542049919508,
+              -0.16749174693366933
+            ],
+            "effectSizeDz": -2.0935839861024355,
+            "workloadBetterShare": 0.9825,
+            "tieShare": 0.006
+          },
+          "preferredShare": {
+            "rotation": 0.24976687774744352,
+            "workload": 0.50304173108216,
+            "diff": 0.25327485333471644,
+            "ci95": [
+              0.2473255574893324,
+              0.25922414918010045
+            ],
+            "effectSizeDz": 1.865810703286465,
+            "workloadBetterShare": 0.9865,
+            "tieShare": 0.004
+          },
+          "overloadedShare": {
+            "rotation": 0.041929166666666746,
+            "workload": 0.016716666666666668,
+            "diff": -0.02521250000000001,
+            "ci95": [
+              -0.029704294687262524,
+              -0.020720705312737495
+            ],
+            "effectSizeDz": -0.24600112183101772,
+            "workloadBetterShare": 0.1775,
+            "tieShare": 0.76
+          },
+          "fallbackRate": {
+            "rotation": 0,
+            "workload": 0.0034119200196033096,
+            "diff": 0.0034119200196033096,
+            "ci95": [
+              0.003112202162478969,
+              0.00371163787672765
+            ],
+            "effectSizeDz": 0.4989158448821511,
+            "workloadBetterShare": 0,
+            "tieShare": 0.629
+          }
+        }
+      },
+      "workload_full": {
+        "label": "Workload-aware (missed = 1)",
+        "missedWeight": 1,
+        "metrics": {
+          "giniAssigned": {
+            "rotation": 0.04765592551018043,
+            "workload": 0.017165011239284437,
+            "diff": -0.03049091427089597,
+            "ci95": [
+              -0.03175421558564108,
+              -0.02922761295615086
+            ],
+            "effectSizeDz": -1.0578024590943471,
+            "workloadBetterShare": 0.898,
+            "tieShare": 0.005
+          },
+          "giniCompleted": {
+            "rotation": 0.12863591674265012,
+            "workload": 0.116499349645751,
+            "diff": -0.0121365670968989,
+            "ci95": [
+              -0.014223688165343435,
+              -0.010049446028454364
+            ],
+            "effectSizeDz": -0.2548527314817521,
+            "workloadBetterShare": 0.6015,
+            "tieShare": 0
+          },
+          "meanWeeklyGapE": {
+            "rotation": 1.2245868055555582,
+            "workload": 0.4470270833333333,
+            "diff": -0.7775597222222213,
+            "ci95": [
+              -0.7960454417633903,
+              -0.7590740026810522
+            ],
+            "effectSizeDz": -1.8434801672187313,
+            "workloadBetterShare": 0.9855,
+            "tieShare": 0.0005
+          },
+          "boundHeldRate": {
+            "rotation": 0.09033333333333363,
+            "workload": 0.9977916666666672,
+            "diff": 0.907458333333339,
+            "ci95": [
+              0.9018375850425213,
+              0.9130790816241567
+            ],
+            "effectSizeDz": 7.0757687296865885,
+            "workloadBetterShare": 1,
+            "tieShare": 0
+          },
+          "completionRate": {
+            "rotation": 0.5998584899330219,
+            "workload": 0.6340545182383913,
+            "diff": 0.03419602830536761,
+            "ci95": [
+              0.03285280231853879,
+              0.035539254292196426
+            ],
+            "effectSizeDz": 1.11575195401327,
+            "workloadBetterShare": 0.8545,
+            "tieShare": 0.04
+          },
+          "dislikedShare": {
+            "rotation": 0.251184907997797,
+            "workload": 0.07167732188120414,
+            "diff": -0.17950758611659323,
+            "ci95": [
+              -0.18314576379306235,
+              -0.1758694084401241
+            ],
+            "effectSizeDz": -2.1624196326480156,
+            "workloadBetterShare": 0.984,
+            "tieShare": 0.007
+          },
+          "preferredShare": {
+            "rotation": 0.24976687774744352,
+            "workload": 0.5189049828735514,
+            "diff": 0.26913810512610814,
+            "ci95": [
+              0.26293985219563887,
+              0.2753363580565774
+            ],
+            "effectSizeDz": 1.9030358491190558,
+            "workloadBetterShare": 0.986,
+            "tieShare": 0.0045
+          },
+          "overloadedShare": {
+            "rotation": 0.041929166666666746,
+            "workload": 0.0008678571428571428,
+            "diff": -0.0410613095238096,
+            "ci95": [
+              -0.04518967499315552,
+              -0.03693294405446367
+            ],
+            "effectSizeDz": -0.43590889625305235,
+            "workloadBetterShare": 0.2085,
+            "tieShare": 0.7905
+          },
+          "fallbackRate": {
+            "rotation": 0,
+            "workload": 0.0030213912329357887,
+            "diff": 0.0030213912329357887,
+            "ci95": [
+              0.0027362133176845054,
+              0.003306569148187072
+            ],
+            "effectSizeDz": 0.46433577817293487,
+            "workloadBetterShare": 0,
+            "tieShare": 0.6635
+          }
+        }
+      }
+    },
+    "bySizeVariant": "workload_half",
+    "bySize": {
+      "2": {
+        "rotation": 0.039989630737958866,
+        "workload": 0.03093565808136722,
+        "diff": -0.009053972656591696,
+        "ci95": [
+          -0.013483800334347762,
+          -0.004624144978835631
+        ],
+        "effectSizeDz": -0.24069581160147943,
+        "workloadBetterShare": 0.5595667870036101,
+        "tieShare": 0.02527075812274368
+      },
+      "3": {
+        "rotation": 0.0268074223054622,
+        "workload": 0.03821268354021814,
+        "diff": 0.011405261234755933,
+        "ci95": [
+          0.008462066340452042,
+          0.014348456129059824
+        ],
+        "effectSizeDz": 0.4349029638583118,
+        "workloadBetterShare": 0.32459016393442625,
+        "tieShare": 0.003278688524590164
+      },
+      "4": {
+        "rotation": 0.051277015530894185,
+        "workload": 0.04048269959452373,
+        "diff": -0.0107943159363705,
+        "ci95": [
+          -0.014542457143818396,
+          -0.007046174728922605
+        ],
+        "effectSizeDz": -0.33377379435869964,
+        "workloadBetterShare": 0.6153846153846154,
+        "tieShare": 0
+      },
+      "5": {
+        "rotation": 0.039461952576782144,
+        "workload": 0.04331423257740453,
+        "diff": 0.0038522800006223785,
+        "ci95": [
+          0.0007079883651190388,
+          0.006996571636125718
+        ],
+        "effectSizeDz": 0.1453348522591334,
+        "workloadBetterShare": 0.4249084249084249,
+        "tieShare": 0
+      },
+      "6": {
+        "rotation": 0.060240893752952065,
+        "workload": 0.04824955015469845,
+        "diff": -0.011991343598253632,
+        "ci95": [
+          -0.015788611435008065,
+          -0.008194075761499199
+        ],
+        "effectSizeDz": -0.36221068886068053,
+        "workloadBetterShare": 0.5958904109589042,
+        "tieShare": 0
+      },
+      "7": {
+        "rotation": 0.04548021180210441,
+        "workload": 0.050974199102823324,
+        "diff": 0.005493987300718885,
+        "ci95": [
+          0.003143761830524833,
+          0.007844212770912937
+        ],
+        "effectSizeDz": 0.2658618174930363,
+        "workloadBetterShare": 0.39730639730639733,
+        "tieShare": 0
+      },
+      "8": {
+        "rotation": 0.07230428194961486,
+        "workload": 0.05445066747218847,
+        "diff": -0.017853614477426307,
+        "ci95": [
+          -0.02194831220260448,
+          -0.013758916752248133
+        ],
+        "effectSizeDz": -0.5200899894251224,
+        "workloadBetterShare": 0.6555555555555556,
+        "tieShare": 0
+      }
+    }
+  },
+  "no_absences": {
+    "label": "No absences",
+    "households": 2000,
+    "weeks": 12,
+    "seed": 20261112,
+    "headlineVariant": "workload_half",
+    "metrics": {
+      "giniAssigned": {
+        "rotation": 0.030098864818963747,
+        "workload": 0.030640350797737234,
+        "diff": 0.0005414859787734837,
+        "ci95": [
+          -0.0008772428626987175,
+          0.001960214820245685
+        ],
+        "effectSizeDz": 0.016727417298730618,
+        "workloadBetterShare": 0.3615,
+        "tieShare": 0.0195
+      },
+      "giniCompleted": {
+        "rotation": 0.08333959452013816,
+        "workload": 0.045335336967673244,
+        "diff": -0.03800425755246472,
+        "ci95": [
+          -0.03954811962738313,
+          -0.03646039547754631
+        ],
+        "effectSizeDz": -1.078859343826908,
+        "workloadBetterShare": 0.8865,
+        "tieShare": 0
+      },
+      "meanWeeklyGapE": {
+        "rotation": 1.0187458333333348,
+        "workload": 0.6087631944444448,
+        "diff": -0.4099826388888878,
+        "ci95": [
+          -0.42606879487174787,
+          -0.39389648290602775
+        ],
+        "effectSizeDz": -1.1170028067669662,
+        "workloadBetterShare": 0.8795,
+        "tieShare": 0.0175
+      },
+      "boundHeldRate": {
+        "rotation": 0.1022083333333336,
+        "workload": 1,
+        "diff": 0.8977916666666703,
+        "ci95": [
+          0.8917609706343024,
+          0.9038223626990383
+        ],
+        "effectSizeDz": 6.524529579385991,
+        "workloadBetterShare": 0.999,
+        "tieShare": 0.001
+      },
+      "completionRate": {
+        "rotation": 0.7587569906401395,
+        "workload": 0.7765676688782226,
+        "diff": 0.017810678238084323,
+        "ci95": [
+          0.016749047165049737,
+          0.01887230931111891
+        ],
+        "effectSizeDz": 0.7352718003789358,
+        "workloadBetterShare": 0.749,
+        "tieShare": 0.063
+      },
+      "dislikedShare": {
+        "rotation": 0.2501263932109731,
+        "workload": 0.07372924358707039,
+        "diff": -0.17639714962390282,
+        "ci95": [
+          -0.17996796237798765,
+          -0.172826336869818
+        ],
+        "effectSizeDz": -2.1650381796252636,
+        "workloadBetterShare": 0.984,
+        "tieShare": 0.006
+      },
+      "preferredShare": {
+        "rotation": 0.25045740618897233,
+        "workload": 0.5165616939804382,
+        "diff": 0.2661042877914658,
+        "ci95": [
+          0.25998202907457946,
+          0.2722265465083521
+        ],
+        "effectSizeDz": 1.904939853212662,
+        "workloadBetterShare": 0.9845,
+        "tieShare": 0.008
+      },
+      "overloadedShare": {
+        "rotation": 0.02,
+        "workload": 0.003233928571428572,
+        "diff": -0.016766071428571425,
+        "ci95": [
+          -0.020819788278865617,
+          -0.012712354578277234
+        ],
+        "effectSizeDz": -0.1812670952517974,
+        "workloadBetterShare": 0.051,
+        "tieShare": 0.9305
+      },
+      "fallbackRate": {
+        "rotation": 0,
+        "workload": 0,
+        "diff": 0,
+        "ci95": [
+          0,
+          0
+        ],
+        "effectSizeDz": 0,
+        "workloadBetterShare": 0,
+        "tieShare": 1
+      }
+    },
+    "variants": {
+      "workload": {
+        "label": "Workload-aware (missed = 0)",
+        "missedWeight": 0,
+        "metrics": {
+          "giniAssigned": {
+            "rotation": 0.030098864818963747,
+            "workload": 0.06745830584411396,
+            "diff": 0.03735944102515038,
+            "ci95": [
+              0.035558471625885775,
+              0.03916041042441499
+            ],
+            "effectSizeDz": 0.9091490923986519,
+            "workloadBetterShare": 0.151,
+            "tieShare": 0.004
+          },
+          "giniCompleted": {
+            "rotation": 0.08333959452013816,
+            "workload": 0.015985340591831647,
+            "diff": -0.0673542539283063,
+            "ci95": [
+              -0.06900462013783461,
+              -0.06570388771877798
+            ],
+            "effectSizeDz": -1.7886517028546047,
+            "workloadBetterShare": 0.987,
+            "tieShare": 0.0005
+          },
+          "meanWeeklyGapE": {
+            "rotation": 1.0187458333333348,
+            "workload": 1.0159881944444435,
+            "diff": -0.0027576388888888737,
+            "ci95": [
+              -0.020584894318435874,
+              0.015069616540658125
+            ],
+            "effectSizeDz": -0.006779442496434814,
+            "workloadBetterShare": 0.4975,
+            "tieShare": 0.0275
+          },
+          "boundHeldRate": {
+            "rotation": 0.1022083333333336,
+            "workload": 0.999875,
+            "diff": 0.8976666666666703,
+            "ci95": [
+              0.8916361717384754,
+              0.9036971615948651
+            ],
+            "effectSizeDz": 6.523838714627984,
+            "workloadBetterShare": 0.999,
+            "tieShare": 0.001
+          },
+          "completionRate": {
+            "rotation": 0.7587569906401395,
+            "workload": 0.772749178356176,
+            "diff": 0.01399218771603701,
+            "ci95": [
+              0.012917359949008736,
+              0.015067015483065285
+            ],
+            "effectSizeDz": 0.5705422611853631,
+            "workloadBetterShare": 0.693,
+            "tieShare": 0.0735
+          },
+          "dislikedShare": {
+            "rotation": 0.2501263932109731,
+            "workload": 0.07281960950001219,
+            "diff": -0.17730678371096123,
+            "ci95": [
+              -0.18086339996497647,
+              -0.173750167456946
+            ],
+            "effectSizeDz": -2.184889192844058,
+            "workloadBetterShare": 0.9865,
+            "tieShare": 0.0045
+          },
+          "preferredShare": {
+            "rotation": 0.25045740618897233,
+            "workload": 0.5185590459358381,
+            "diff": 0.2681016397468654,
+            "ci95": [
+              0.2619932772033428,
+              0.274210002290388
+            ],
+            "effectSizeDz": 1.923604296045217,
+            "workloadBetterShare": 0.9865,
+            "tieShare": 0.005
+          },
+          "overloadedShare": {
+            "rotation": 0.02,
+            "workload": 0.08626369047619024,
+            "diff": 0.06626369047619061,
+            "ci95": [
+              0.059994460645085956,
+              0.07253292030729527
+            ],
+            "effectSizeDz": 0.46323621219765165,
+            "workloadBetterShare": 0.0425,
+            "tieShare": 0.556
+          },
+          "fallbackRate": {
+            "rotation": 0,
+            "workload": 0,
+            "diff": 0,
+            "ci95": [
+              0,
+              0
+            ],
+            "effectSizeDz": 0,
+            "workloadBetterShare": 0,
+            "tieShare": 1
+          }
+        }
+      },
+      "workload_half": {
+        "label": "Workload-aware (missed = ½)",
+        "missedWeight": 0.5,
+        "metrics": {
+          "giniAssigned": {
+            "rotation": 0.030098864818963747,
+            "workload": 0.030640350797737234,
+            "diff": 0.0005414859787734837,
+            "ci95": [
+              -0.0008772428626987175,
+              0.001960214820245685
+            ],
+            "effectSizeDz": 0.016727417298730618,
+            "workloadBetterShare": 0.3615,
+            "tieShare": 0.0195
+          },
+          "giniCompleted": {
+            "rotation": 0.08333959452013816,
+            "workload": 0.045335336967673244,
+            "diff": -0.03800425755246472,
+            "ci95": [
+              -0.03954811962738313,
+              -0.03646039547754631
+            ],
+            "effectSizeDz": -1.078859343826908,
+            "workloadBetterShare": 0.8865,
+            "tieShare": 0
+          },
+          "meanWeeklyGapE": {
+            "rotation": 1.0187458333333348,
+            "workload": 0.6087631944444448,
+            "diff": -0.4099826388888878,
+            "ci95": [
+              -0.42606879487174787,
+              -0.39389648290602775
+            ],
+            "effectSizeDz": -1.1170028067669662,
+            "workloadBetterShare": 0.8795,
+            "tieShare": 0.0175
+          },
+          "boundHeldRate": {
+            "rotation": 0.1022083333333336,
+            "workload": 1,
+            "diff": 0.8977916666666703,
+            "ci95": [
+              0.8917609706343024,
+              0.9038223626990383
+            ],
+            "effectSizeDz": 6.524529579385991,
+            "workloadBetterShare": 0.999,
+            "tieShare": 0.001
+          },
+          "completionRate": {
+            "rotation": 0.7587569906401395,
+            "workload": 0.7765676688782226,
+            "diff": 0.017810678238084323,
+            "ci95": [
+              0.016749047165049737,
+              0.01887230931111891
+            ],
+            "effectSizeDz": 0.7352718003789358,
+            "workloadBetterShare": 0.749,
+            "tieShare": 0.063
+          },
+          "dislikedShare": {
+            "rotation": 0.2501263932109731,
+            "workload": 0.07372924358707039,
+            "diff": -0.17639714962390282,
+            "ci95": [
+              -0.17996796237798765,
+              -0.172826336869818
+            ],
+            "effectSizeDz": -2.1650381796252636,
+            "workloadBetterShare": 0.984,
+            "tieShare": 0.006
+          },
+          "preferredShare": {
+            "rotation": 0.25045740618897233,
+            "workload": 0.5165616939804382,
+            "diff": 0.2661042877914658,
+            "ci95": [
+              0.25998202907457946,
+              0.2722265465083521
+            ],
+            "effectSizeDz": 1.904939853212662,
+            "workloadBetterShare": 0.9845,
+            "tieShare": 0.008
+          },
+          "overloadedShare": {
+            "rotation": 0.02,
+            "workload": 0.003233928571428572,
+            "diff": -0.016766071428571425,
+            "ci95": [
+              -0.020819788278865617,
+              -0.012712354578277234
+            ],
+            "effectSizeDz": -0.1812670952517974,
+            "workloadBetterShare": 0.051,
+            "tieShare": 0.9305
+          },
+          "fallbackRate": {
+            "rotation": 0,
+            "workload": 0,
+            "diff": 0,
+            "ci95": [
+              0,
+              0
+            ],
+            "effectSizeDz": 0,
+            "workloadBetterShare": 0,
+            "tieShare": 1
+          }
+        }
+      },
+      "workload_full": {
+        "label": "Workload-aware (missed = 1)",
+        "missedWeight": 1,
+        "metrics": {
+          "giniAssigned": {
+            "rotation": 0.030098864818963747,
+            "workload": 0.007848151934618814,
+            "diff": -0.022250712884344943,
+            "ci95": [
+              -0.023578778792655065,
+              -0.020922646976034822
+            ],
+            "effectSizeDz": -0.7342862145768647,
+            "workloadBetterShare": 0.7695,
+            "tieShare": 0.0445
+          },
+          "giniCompleted": {
+            "rotation": 0.08333959452013816,
+            "workload": 0.0728576371821571,
+            "diff": -0.010481957337980784,
+            "ci95": [
+              -0.012122640583323876,
+              -0.008841274092637692
+            ],
+            "effectSizeDz": -0.2800004428310588,
+            "workloadBetterShare": 0.6005,
+            "tieShare": 0.001
+          },
+          "meanWeeklyGapE": {
+            "rotation": 1.0187458333333348,
+            "workload": 0.4044152777777776,
+            "diff": -0.614330555555555,
+            "ci95": [
+              -0.6319110948984348,
+              -0.5967500162126753
+            ],
+            "effectSizeDz": -1.5314788232195085,
+            "workloadBetterShare": 0.9605,
+            "tieShare": 0.0115
+          },
+          "boundHeldRate": {
+            "rotation": 0.1022083333333336,
+            "workload": 1,
+            "diff": 0.8977916666666703,
+            "ci95": [
+              0.8917609706343024,
+              0.9038223626990383
+            ],
+            "effectSizeDz": 6.524529579385991,
+            "workloadBetterShare": 0.999,
+            "tieShare": 0.001
+          },
+          "completionRate": {
+            "rotation": 0.7587569906401395,
+            "workload": 0.780002426359806,
+            "diff": 0.021245435719666302,
+            "ci95": [
+              0.02017390591257222,
+              0.022316965526760383
+            ],
+            "effectSizeDz": 0.86896535034182,
+            "workloadBetterShare": 0.792,
+            "tieShare": 0.058
+          },
+          "dislikedShare": {
+            "rotation": 0.2501263932109731,
+            "workload": 0.06680671181235827,
+            "diff": -0.18331968139861507,
+            "ci95": [
+              -0.18694496987165252,
+              -0.17969439292557762
+            ],
+            "effectSizeDz": -2.216193093731439,
+            "workloadBetterShare": 0.9855,
+            "tieShare": 0.01
+          },
+          "preferredShare": {
+            "rotation": 0.25045740618897233,
+            "workload": 0.5304815806791644,
+            "diff": 0.28002417449019146,
+            "ci95": [
+              0.2737089516121244,
+              0.28633939736825853
+            ],
+            "effectSizeDz": 1.9433360929965482,
+            "workloadBetterShare": 0.986,
+            "tieShare": 0.0075
+          },
+          "overloadedShare": {
+            "rotation": 0.02,
+            "workload": 0,
+            "diff": -0.02,
+            "ci95": [
+              -0.024002083936890826,
+              -0.015997916063109175
+            ],
+            "effectSizeDz": -0.2190205555410941,
+            "workloadBetterShare": 0.052,
+            "tieShare": 0.948
+          },
+          "fallbackRate": {
+            "rotation": 0,
+            "workload": 0,
+            "diff": 0,
+            "ci95": [
+              0,
+              0
+            ],
+            "effectSizeDz": 0,
+            "workloadBetterShare": 0,
+            "tieShare": 1
+          }
+        }
+      }
+    },
+    "bySizeVariant": "workload_half",
+    "bySize": {
+      "2": {
+        "rotation": 0.03910068793320348,
+        "workload": 0.01782028503896311,
+        "diff": -0.021280402894240363,
+        "ci95": [
+          -0.025046356343105383,
+          -0.017514449445375342
+        ],
+        "effectSizeDz": -0.6362673759937972,
+        "workloadBetterShare": 0.7029702970297029,
+        "tieShare": 0.04950495049504951
+      },
+      "3": {
+        "rotation": 0,
+        "workload": 0.02518866642926201,
+        "diff": 0.02518866642926201,
+        "ci95": [
+          0.023738341637927762,
+          0.026638991220596257
+        ],
+        "effectSizeDz": 1.9523567755462095,
+        "workloadBetterShare": 0,
+        "tieShare": 0.01644736842105263
+      },
+      "4": {
+        "rotation": 0.03765458258347918,
+        "workload": 0.028070769561505084,
+        "diff": -0.00958381302197412,
+        "ci95": [
+          -0.01336763171121041,
+          -0.005799994332737831
+        ],
+        "effectSizeDz": -0.2880619265248644,
+        "workloadBetterShare": 0.5218855218855218,
+        "tieShare": 0.026936026936026935
+      },
+      "5": {
+        "rotation": 0.016318314969028393,
+        "workload": 0.03343561724418122,
+        "diff": 0.017117302275152825,
+        "ci95": [
+          0.015626087374705434,
+          0.018608517175600216
+        ],
+        "effectSizeDz": 1.3421405466786678,
+        "workloadBetterShare": 0.08185053380782918,
+        "tieShare": 0.010676156583629894
+      },
+      "6": {
+        "rotation": 0.04305442708394524,
+        "workload": 0.03515082341368586,
+        "diff": -0.007903603670259388,
+        "ci95": [
+          -0.01230640046276657,
+          -0.0035008068777522064
+        ],
+        "effectSizeDz": -0.20952122761414077,
+        "workloadBetterShare": 0.48936170212765956,
+        "tieShare": 0.0035460992907801418
+      },
+      "7": {
+        "rotation": 0.022770750888522796,
+        "workload": 0.03649291223960465,
+        "diff": 0.013722161351081834,
+        "ci95": [
+          0.012209431813798547,
+          0.01523489088836512
+        ],
+        "effectSizeDz": 1.0458475531751834,
+        "workloadBetterShare": 0.15916955017301038,
+        "tieShare": 0.006920415224913495
+      },
+      "8": {
+        "rotation": 0.0568002795742656,
+        "workload": 0.0411163515937943,
+        "diff": -0.01568392798047127,
+        "ci95": [
+          -0.020184982597153334,
+          -0.011182873363789207
+        ],
+        "effectSizeDz": -0.4372217062960737,
+        "workloadBetterShare": 0.6065573770491803,
+        "tieShare": 0.020491803278688523
+      }
+    }
+  },
+  "frequent_absences": {
+    "label": "Frequent absences",
+    "households": 2000,
+    "weeks": 12,
+    "seed": 20261113,
+    "headlineVariant": "workload_half",
+    "metrics": {
+      "giniAssigned": {
+        "rotation": 0.06789531918075584,
+        "workload": 0.03993603781519441,
+        "diff": -0.027959281365561386,
+        "ci95": [
+          -0.029443497592282975,
+          -0.026475065138839796
+        ],
+        "effectSizeDz": -0.8256004153257717,
+        "workloadBetterShare": 0.8055,
+        "tieShare": 0.0055
+      },
+      "giniCompleted": {
+        "rotation": 0.10174496127891546,
+        "workload": 0.059020421121779534,
+        "diff": -0.04272454015713576,
+        "ci95": [
+          -0.04456822340229395,
+          -0.04088085691197757
+        ],
+        "effectSizeDz": -1.015622144667984,
+        "workloadBetterShare": 0.8575,
+        "tieShare": 0
+      },
+      "meanWeeklyGapE": {
+        "rotation": 1.531750694444442,
+        "workload": 0.6556277777777781,
+        "diff": -0.8761229166666687,
+        "ci95": [
+          -0.895861555414417,
+          -0.8563842779189205
+        ],
+        "effectSizeDz": -1.9453104288306906,
+        "workloadBetterShare": 0.9885,
+        "tieShare": 0.0015
+      },
+      "boundHeldRate": {
+        "rotation": 0.08929166666666682,
+        "workload": 0.9944583333333352,
+        "diff": 0.9051666666666697,
+        "ci95": [
+          0.8987408919584021,
+          0.9115924413749372
+        ],
+        "effectSizeDz": 6.173680229183364,
+        "workloadBetterShare": 1,
+        "tieShare": 0
+      },
+      "completionRate": {
+        "rotation": 0.7610541913657338,
+        "workload": 0.7784490674893226,
+        "diff": 0.01739487612358808,
+        "ci95": [
+          0.016349886228548594,
+          0.018439866018627567
+        ],
+        "effectSizeDz": 0.7295420394785728,
+        "workloadBetterShare": 0.743,
+        "tieShare": 0.0615
+      },
+      "dislikedShare": {
+        "rotation": 0.24826266042188805,
+        "workload": 0.08587156156834488,
+        "diff": -0.16239109885354336,
+        "ci95": [
+          -0.16589001500011175,
+          -0.15889218270697497
+        ],
+        "effectSizeDz": -2.0340881024363644,
+        "workloadBetterShare": 0.9865,
+        "tieShare": 0.005
+      },
+      "preferredShare": {
+        "rotation": 0.2517492318012129,
+        "workload": 0.48590518876418165,
+        "diff": 0.23415595696297023,
+        "ci95": [
+          0.22868833229633828,
+          0.23962358162960218
+        ],
+        "effectSizeDz": 1.8769279006844548,
+        "workloadBetterShare": 0.9905,
+        "tieShare": 0.0035
+      },
+      "overloadedShare": {
+        "rotation": 0.0858369047619045,
+        "workload": 0.012849404761904758,
+        "diff": -0.07298749999999997,
+        "ci95": [
+          -0.0781885942983977,
+          -0.06778640570160224
+        ],
+        "effectSizeDz": -0.6150279233617538,
+        "workloadBetterShare": 0.382,
+        "tieShare": 0.597
+      },
+      "fallbackRate": {
+        "rotation": 0,
+        "workload": 0.010636114472728045,
+        "diff": 0.010636114472728045,
+        "ci95": [
+          0.010117100006779373,
+          0.011155128938676716
+        ],
+        "effectSizeDz": 0.8981411890066446,
+        "workloadBetterShare": 0,
+        "tieShare": 0.242
+      }
+    },
+    "variants": {
+      "workload": {
+        "label": "Workload-aware (missed = 0)",
+        "missedWeight": 0,
+        "metrics": {
+          "giniAssigned": {
+            "rotation": 0.06789531918075584,
+            "workload": 0.06707064504074813,
+            "diff": -0.0008246741400077318,
+            "ci95": [
+              -0.0025634153948320094,
+              0.000914067114816546
+            ],
+            "effectSizeDz": -0.020786840855159135,
+            "workloadBetterShare": 0.501,
+            "tieShare": 0.0025
+          },
+          "giniCompleted": {
+            "rotation": 0.10174496127891546,
+            "workload": 0.04116906422102255,
+            "diff": -0.06057589705789273,
+            "ci95": [
+              -0.06250687462683237,
+              -0.0586449194889531
+            ],
+            "effectSizeDz": -1.374876531786765,
+            "workloadBetterShare": 0.9195,
+            "tieShare": 0
+          },
+          "meanWeeklyGapE": {
+            "rotation": 1.531750694444442,
+            "workload": 1.0102291666666667,
+            "diff": -0.5215215277777775,
+            "ci95": [
+              -0.5404347919571133,
+              -0.5026082635984417
+            ],
+            "effectSizeDz": -1.2085004737917984,
+            "workloadBetterShare": 0.9165,
+            "tieShare": 0.0145
+          },
+          "boundHeldRate": {
+            "rotation": 0.08929166666666682,
+            "workload": 0.9936666666666685,
+            "diff": 0.9043750000000036,
+            "ci95": [
+              0.8979432178693678,
+              0.9108067821306394
+            ],
+            "effectSizeDz": 6.162519368212672,
+            "workloadBetterShare": 1,
+            "tieShare": 0
+          },
+          "completionRate": {
+            "rotation": 0.7610541913657338,
+            "workload": 0.7747328307388148,
+            "diff": 0.013678639373081012,
+            "ci95": [
+              0.012639024294175672,
+              0.014718254451986351
+            ],
+            "effectSizeDz": 0.5766488142884131,
+            "workloadBetterShare": 0.6955,
+            "tieShare": 0.0695
+          },
+          "dislikedShare": {
+            "rotation": 0.24826266042188805,
+            "workload": 0.08554544811171587,
+            "diff": -0.16271721231017236,
+            "ci95": [
+              -0.16619358561021938,
+              -0.15924083901012534
+            ],
+            "effectSizeDz": -2.05138966447184,
+            "workloadBetterShare": 0.987,
+            "tieShare": 0.003
+          },
+          "preferredShare": {
+            "rotation": 0.2517492318012129,
+            "workload": 0.4875147693617874,
+            "diff": 0.23576553756057436,
+            "ci95": [
+              0.23030804649777967,
+              0.24122302862336906
+            ],
+            "effectSizeDz": 1.89333892595663,
+            "workloadBetterShare": 0.9915,
+            "tieShare": 0.0035
+          },
+          "overloadedShare": {
+            "rotation": 0.0858369047619045,
+            "workload": 0.08023690476190451,
+            "diff": -0.005599999999999995,
+            "ci95": [
+              -0.012121364596385421,
+              0.0009213645963854315
+            ],
+            "effectSizeDz": -0.03763488723608717,
+            "workloadBetterShare": 0.2285,
+            "tieShare": 0.565
+          },
+          "fallbackRate": {
+            "rotation": 0,
+            "workload": 0.010118850386701243,
+            "diff": 0.010118850386701243,
+            "ci95": [
+              0.009618663369856622,
+              0.010619037403545863
+            ],
+            "effectSizeDz": 0.8866247153842408,
+            "workloadBetterShare": 0,
+            "tieShare": 0.268
+          }
+        }
+      },
+      "workload_half": {
+        "label": "Workload-aware (missed = ½)",
+        "missedWeight": 0.5,
+        "metrics": {
+          "giniAssigned": {
+            "rotation": 0.06789531918075584,
+            "workload": 0.03993603781519441,
+            "diff": -0.027959281365561386,
+            "ci95": [
+              -0.029443497592282975,
+              -0.026475065138839796
+            ],
+            "effectSizeDz": -0.8256004153257717,
+            "workloadBetterShare": 0.8055,
+            "tieShare": 0.0055
+          },
+          "giniCompleted": {
+            "rotation": 0.10174496127891546,
+            "workload": 0.059020421121779534,
+            "diff": -0.04272454015713576,
+            "ci95": [
+              -0.04456822340229395,
+              -0.04088085691197757
+            ],
+            "effectSizeDz": -1.015622144667984,
+            "workloadBetterShare": 0.8575,
+            "tieShare": 0
+          },
+          "meanWeeklyGapE": {
+            "rotation": 1.531750694444442,
+            "workload": 0.6556277777777781,
+            "diff": -0.8761229166666687,
+            "ci95": [
+              -0.895861555414417,
+              -0.8563842779189205
+            ],
+            "effectSizeDz": -1.9453104288306906,
+            "workloadBetterShare": 0.9885,
+            "tieShare": 0.0015
+          },
+          "boundHeldRate": {
+            "rotation": 0.08929166666666682,
+            "workload": 0.9944583333333352,
+            "diff": 0.9051666666666697,
+            "ci95": [
+              0.8987408919584021,
+              0.9115924413749372
+            ],
+            "effectSizeDz": 6.173680229183364,
+            "workloadBetterShare": 1,
+            "tieShare": 0
+          },
+          "completionRate": {
+            "rotation": 0.7610541913657338,
+            "workload": 0.7784490674893226,
+            "diff": 0.01739487612358808,
+            "ci95": [
+              0.016349886228548594,
+              0.018439866018627567
+            ],
+            "effectSizeDz": 0.7295420394785728,
+            "workloadBetterShare": 0.743,
+            "tieShare": 0.0615
+          },
+          "dislikedShare": {
+            "rotation": 0.24826266042188805,
+            "workload": 0.08587156156834488,
+            "diff": -0.16239109885354336,
+            "ci95": [
+              -0.16589001500011175,
+              -0.15889218270697497
+            ],
+            "effectSizeDz": -2.0340881024363644,
+            "workloadBetterShare": 0.9865,
+            "tieShare": 0.005
+          },
+          "preferredShare": {
+            "rotation": 0.2517492318012129,
+            "workload": 0.48590518876418165,
+            "diff": 0.23415595696297023,
+            "ci95": [
+              0.22868833229633828,
+              0.23962358162960218
+            ],
+            "effectSizeDz": 1.8769279006844548,
+            "workloadBetterShare": 0.9905,
+            "tieShare": 0.0035
+          },
+          "overloadedShare": {
+            "rotation": 0.0858369047619045,
+            "workload": 0.012849404761904758,
+            "diff": -0.07298749999999997,
+            "ci95": [
+              -0.0781885942983977,
+              -0.06778640570160224
+            ],
+            "effectSizeDz": -0.6150279233617538,
+            "workloadBetterShare": 0.382,
+            "tieShare": 0.597
+          },
+          "fallbackRate": {
+            "rotation": 0,
+            "workload": 0.010636114472728045,
+            "diff": 0.010636114472728045,
+            "ci95": [
+              0.010117100006779373,
+              0.011155128938676716
+            ],
+            "effectSizeDz": 0.8981411890066446,
+            "workloadBetterShare": 0,
+            "tieShare": 0.242
+          }
+        }
+      },
+      "workload_full": {
+        "label": "Workload-aware (missed = 1)",
+        "missedWeight": 1,
+        "metrics": {
+          "giniAssigned": {
+            "rotation": 0.06789531918075584,
+            "workload": 0.029223563777734975,
+            "diff": -0.03867175540302086,
+            "ci95": [
+              -0.040137121698768125,
+              -0.0372063891072736
+            ],
+            "effectSizeDz": -1.1566148431082421,
+            "workloadBetterShare": 0.8915,
+            "tieShare": 0.0045
+          },
+          "giniCompleted": {
+            "rotation": 0.10174496127891546,
+            "workload": 0.08056093992262915,
+            "diff": -0.021184021356286137,
+            "ci95": [
+              -0.023060362460792325,
+              -0.019307680251779948
+            ],
+            "effectSizeDz": -0.49480910951839907,
+            "workloadBetterShare": 0.6945,
+            "tieShare": 0.001
+          },
+          "meanWeeklyGapE": {
+            "rotation": 1.531750694444442,
+            "workload": 0.5135770833333332,
+            "diff": -1.0181736111111122,
+            "ci95": [
+              -1.0396319226274229,
+              -0.9967152995948014
+            ],
+            "effectSizeDz": -2.0795404125791737,
+            "workloadBetterShare": 0.994,
+            "tieShare": 0.001
+          },
+          "boundHeldRate": {
+            "rotation": 0.08929166666666682,
+            "workload": 0.9947916666666685,
+            "diff": 0.9055000000000034,
+            "ci95": [
+              0.8990834865420724,
+              0.9119165134579345
+            ],
+            "effectSizeDz": 6.184867765221963,
+            "workloadBetterShare": 1,
+            "tieShare": 0
+          },
+          "completionRate": {
+            "rotation": 0.7610541913657338,
+            "workload": 0.7813338748470077,
+            "diff": 0.0202796834812729,
+            "ci95": [
+              0.019225541296238425,
+              0.021333825666307375
+            ],
+            "effectSizeDz": 0.843146521231884,
+            "workloadBetterShare": 0.7845,
+            "tieShare": 0.0575
+          },
+          "dislikedShare": {
+            "rotation": 0.24826266042188805,
+            "workload": 0.07919969774376188,
+            "diff": -0.16906296267812604,
+            "ci95": [
+              -0.172609659930875,
+              -0.1655162654253771
+            ],
+            "effectSizeDz": -2.0891298302844303,
+            "workloadBetterShare": 0.989,
+            "tieShare": 0.002
+          },
+          "preferredShare": {
+            "rotation": 0.2517492318012129,
+            "workload": 0.498683781364697,
+            "diff": 0.24693454956348526,
+            "ci95": [
+              0.2412635562513367,
+              0.2526055428756338
+            ],
+            "effectSizeDz": 1.9083753418707041,
+            "workloadBetterShare": 0.992,
+            "tieShare": 0.002
+          },
+          "overloadedShare": {
+            "rotation": 0.0858369047619045,
+            "workload": 0.006057142857142858,
+            "diff": -0.07977976190476177,
+            "ci95": [
+              -0.08489868567619932,
+              -0.07466083813332422
+            ],
+            "effectSizeDz": -0.6830541701219487,
+            "workloadBetterShare": 0.403,
+            "tieShare": 0.589
+          },
+          "fallbackRate": {
+            "rotation": 0,
+            "workload": 0.00919931731981524,
+            "diff": 0.00919931731981524,
+            "ci95": [
+              0.0086990394097521,
+              0.00969959522987838
+            ],
+            "effectSizeDz": 0.8059077760870902,
+            "workloadBetterShare": 0,
+            "tieShare": 0.313
+          }
+        }
+      }
+    },
+    "bySizeVariant": "workload_half",
+    "bySize": {
+      "2": {
+        "rotation": 0.042473955807910906,
+        "workload": 0.034690104272386196,
+        "diff": -0.0077838515355246884,
+        "ci95": [
+          -0.012487224618812125,
+          -0.003080478452237252
+        ],
+        "effectSizeDz": -0.1988842388020274,
+        "workloadBetterShare": 0.5075187969924813,
+        "tieShare": 0.041353383458646614
+      },
+      "3": {
+        "rotation": 0.04820567574892907,
+        "workload": 0.03749970796544507,
+        "diff": -0.010705967783483972,
+        "ci95": [
+          -0.01387959808950901,
+          -0.007532337477458935
+        ],
+        "effectSizeDz": -0.4016437593480335,
+        "workloadBetterShare": 0.6642066420664207,
+        "tieShare": 0
+      },
+      "4": {
+        "rotation": 0.0687969166628737,
+        "workload": 0.03680224755079039,
+        "diff": -0.03199466911208327,
+        "ci95": [
+          -0.036448355628230775,
+          -0.027540982595935768
+        ],
+        "effectSizeDz": -0.8475386426198432,
+        "workloadBetterShare": 0.8188405797101449,
+        "tieShare": 0
+      },
+      "5": {
+        "rotation": 0.06723796582213233,
+        "workload": 0.036864501220184025,
+        "diff": -0.03037346460194832,
+        "ci95": [
+          -0.03389635415038015,
+          -0.026850575053516488
+        ],
+        "effectSizeDz": -0.9923214486096642,
+        "workloadBetterShare": 0.8620689655172413,
+        "tieShare": 0
+      },
+      "6": {
+        "rotation": 0.07987765848390012,
+        "workload": 0.042158189232791826,
+        "diff": -0.037719469251108265,
+        "ci95": [
+          -0.041324107818013815,
+          -0.034114830684202714
+        ],
+        "effectSizeDz": -1.2085473645166098,
+        "workloadBetterShare": 0.9027777777777778,
+        "tieShare": 0
+      },
+      "7": {
+        "rotation": 0.07580308744815117,
+        "workload": 0.04401763373159017,
+        "diff": -0.03178545371656099,
+        "ci95": [
+          -0.03472049470027719,
+          -0.028850412732844787
+        ],
+        "effectSizeDz": -1.215403259811363,
+        "workloadBetterShare": 0.9081967213114754,
+        "tieShare": 0
+      },
+      "8": {
+        "rotation": 0.08821434732311444,
+        "workload": 0.04627310713897359,
+        "diff": -0.04194124018414082,
+        "ci95": [
+          -0.04522298371774692,
+          -0.03865949665053472
+        ],
+        "effectSizeDz": -1.4366663165172604,
+        "workloadBetterShare": 0.930921052631579,
+        "tieShare": 0
+      }
+    }
+  }
+}

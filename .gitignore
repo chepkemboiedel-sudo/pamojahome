@@ -1,0 +1,8 @@
+node_modules/
+.next/
+.env*.local
+supabase/local/.data/
+apps/web/e2e/screenshots/
+packages/engine/results/households.csv
+*.tsbuildinfo
+next-env.d.ts

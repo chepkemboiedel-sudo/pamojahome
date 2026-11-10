@@ -1,0 +1,24 @@
+{
+  "name": "pamojahome",
+  "private": true,
+  "description": "Workload-aware household chores and shared expenses.",
+  "workspaces": [
+    "apps/web",
+    "packages/engine",
+    "supabase"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/web",
+    "build": "npm run build -w apps/web",
+    "test": "npm test -w packages/engine && npm test -w supabase && npm test -w apps/web",
+    "typecheck": "npm run typecheck -w packages/engine && npm run typecheck -w apps/web",
+    "simulate": "npm run simulate -w packages/engine",
+    "local:db": "bash supabase/local/start.sh"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "overrides": {
+    "postcss": "8.5.32"
+  }
+}
