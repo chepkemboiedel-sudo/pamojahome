@@ -8,7 +8,14 @@ function required(name: string, value: string | undefined): string {
 export const publicEnv = {
   supabaseUrl: () => required('NEXT_PUBLIC_SUPABASE_URL', process.env.NEXT_PUBLIC_SUPABASE_URL),
   supabaseAnonKey: () => required('NEXT_PUBLIC_SUPABASE_ANON_KEY', process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY),
-  siteUrl: () => process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
+  /**
+   * Base URL for links in emails. Set NEXT_PUBLIC_SITE_URL for a custom domain; on Vercel it
+   * otherwise falls back to the production domain Vercel provides (used on the server only).
+   */
+  siteUrl: () =>
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : '') ||
+    'http://localhost:3000',
 };
 
 /** Server-only secrets. Importing this from a client component is a bug. */
