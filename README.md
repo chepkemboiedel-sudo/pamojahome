@@ -11,7 +11,7 @@ PamojaHome is a household app for roommates and families. It shares out chores b
 | `apps/web` | The Next.js app (App Router, TypeScript, Tailwind) | 14 unit tests, 16-step end-to-end walkthrough |
 | `packages/engine` | The allocation engine (DD-05), shared by the app and the research simulation | 21 tests |
 | `packages/engine/results` | Simulation results: 4 scenarios × 2,000 households, with figures | — |
-| `supabase` | Database schema, row-level security, database functions and scheduled jobs (5 migrations) | 82 checks |
+| `supabase` | Database schema, row-level security, database functions and scheduled jobs (6 migrations) | 82 checks |
 
 ## How it fits together
 
@@ -66,7 +66,8 @@ The end-to-end walkthrough covers:
 
 1. Create a Supabase project and enable **Integrations → Cron**. Then run `npx supabase login`, `npx supabase link --project-ref <your-project-ref>` and `npx supabase db push --remote` (see `supabase/README.md`).
 2. Deploy `apps/web` to Vercel with the variables in `apps/web/.env.example`.
-3. In Supabase, schedule the commented `pamoja-weekly-allocation` job from migration 3 (hourly on Mondays): a `net.http_post` to `https://<your-app>/api/cron/allocate` with the header `Authorization: Bearer <CRON_SECRET>` (see `supabase/README.md`).
+3. In Supabase, add two Vault secrets (**Integrations → Vault**): `app_url` (the deployed address, no trailing slash) and `cron_secret` (the same value as `CRON_SECRET`). Migration 6 already schedules `pamoja-weekly-allocation`, which calls `/api/cron/allocate` hourly on Mondays.
+4. In **Authentication → URL Configuration**, set the Site URL to the deployed address and add `<address>/auth/callback` to the redirect URLs, so sign-up emails link to the live app.
 
 ## Status
 

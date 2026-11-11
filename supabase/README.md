@@ -11,6 +11,7 @@ The Supabase (Postgres) schema and security rules for PamojaHome: 31 tables, 3 c
 | `migrations/20261110000003_grants_jobs_storage.sql` | Table and function permissions, Supabase Cron jobs, private `receipts` storage bucket |
 | `migrations/20261110000004_missed_chore_weight.sql` | Missed chores count at partial weight (default 50%) toward workload: `missed_weight_pct` setting, `missed_points` and `load_points` in `member_workload`, `set_missed_chore_weight` (DD-05) |
 | `migrations/20261110000005_apply_allocation.sql` | `apply_allocation`: writes a week's period, tasks, rejoin adjustments and each task's "Why this is yours" reason in one transaction; a repeated run changes nothing (service role only) |
+| `migrations/20261111000006_weekly_allocation_job.sql` | Enables `pg_net` and schedules `pamoja-weekly-allocation`, which calls the app's `/api/cron/allocate` hourly on Mondays using the `app_url` and `cron_secret` Vault secrets (skipped where pg_cron is absent) |
 | `local/` | Local backend for development and end-to-end tests: Postgres 16, PostgREST and a stand-in for Supabase Auth (never deploy) |
 | `tests/supabase_stubs.sql` | Stand-ins for Supabase's `auth` and `storage` schemas so the tests run on plain Postgres |
 | `tests/schema.test.mjs` | 82 automated checks of the rules |
@@ -22,7 +23,7 @@ npm install
 npm test
 ```
 
-The tests run the five migrations on PGlite (Postgres 16 in WebAssembly), so no database server is needed.
+The tests run the six migrations on PGlite (Postgres 16 in WebAssembly), so no database server is needed.
 
 ## Apply to Supabase
 
@@ -34,7 +35,7 @@ The tests run the five migrations on PGlite (Postgres 16 in WebAssembly), so no 
    npx supabase db push --remote
    ```
    `--remote` matters: without it, CLI 3 pushes to a local database instead of the linked project.
-3. For jobs that call the app (weekly allocation, notifications, purge), store `app_url` and `cron_secret` in Supabase Vault, enable `pg_net`, and add the commented `net.http_post` jobs from migration 3.
+3. In **Integrations → Vault**, add `app_url` (the deployed app's address, no trailing slash) and `cron_secret` (the same value as the app's `CRON_SECRET`). Migration 6 schedules the weekly allocation job, which reads both. Future jobs that call the app (notifications, purge) follow the same pattern.
 
 ## How the app uses it
 
