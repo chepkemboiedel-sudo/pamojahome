@@ -64,7 +64,7 @@ The end-to-end walkthrough covers:
 
 ## Deploy
 
-1. Create a Supabase project. Enable **Integrations → Cron**, then run `supabase db push` with the files in `supabase/migrations`.
+1. Create a Supabase project and enable **Integrations → Cron**. Then run `npx supabase login`, `npx supabase link --project-ref <your-project-ref>` and `npx supabase db push --remote` (see `supabase/README.md`).
 2. Deploy `apps/web` to Vercel with the variables in `apps/web/.env.example`.
 3. In Supabase, schedule the commented `pamoja-weekly-allocation` job from migration 3 (hourly on Mondays): a `net.http_post` to `https://<your-app>/api/cron/allocate` with the header `Authorization: Bearer <CRON_SECRET>` (see `supabase/README.md`).
 
@@ -81,3 +81,7 @@ The end-to-end walkthrough covers:
 - money: adding expenses (equal or custom split), balances, settle-up suggestions, recording payments, and reversing mistakes.
 
 **Next:** recurring bills, one-off tasks, swaps, days unavailable and vacations, effort voting, move-out, and the organizer's dispute review.
+
+## License
+
+[MIT](LICENSE)

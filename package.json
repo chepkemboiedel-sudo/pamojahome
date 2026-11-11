@@ -2,6 +2,7 @@
   "name": "pamojahome",
   "private": true,
   "description": "Workload-aware household chores and shared expenses.",
+  "license": "MIT",
   "workspaces": [
     "apps/web",
     "packages/engine",
@@ -20,5 +21,8 @@
   },
   "overrides": {
     "postcss": "8.5.32"
+  },
+  "devDependencies": {
+    "supabase": "^3.1.0"
   }
 }

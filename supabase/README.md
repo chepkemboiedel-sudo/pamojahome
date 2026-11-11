@@ -26,10 +26,15 @@ The tests run the five migrations on PGlite (Postgres 16 in WebAssembly), so no 
 
 ## Apply to Supabase
 
-1. Install the Supabase CLI and link your project.
-2. From the repository root, run `supabase db push` (the migrations are in `supabase/migrations/`).
-3. In the Supabase dashboard, enable **Integrations → Cron** (pg_cron) **before** running migration 3, so its scheduled jobs are created. If you enable it later, rerun the `cron.schedule` block from migration 3.
-4. For jobs that call the app (weekly allocation, notifications, purge), store `app_url` and `cron_secret` in Supabase Vault, enable `pg_net`, and add the commented `net.http_post` jobs from migration 3.
+1. In the Supabase dashboard, enable **Integrations → Cron** (pg_cron) **before** pushing, so migration 3 creates its scheduled jobs. If you enable it later, rerun the `cron.schedule` block from migration 3.
+2. From the repository root (the Supabase CLI is a dev dependency, so `npm install` provides it):
+   ```bash
+   npx supabase login
+   npx supabase link --project-ref <your-project-ref>
+   npx supabase db push --remote
+   ```
+   `--remote` matters: without it, CLI 3 pushes to a local database instead of the linked project.
+3. For jobs that call the app (weekly allocation, notifications, purge), store `app_url` and `cron_secret` in Supabase Vault, enable `pg_net`, and add the commented `net.http_post` jobs from migration 3.
 
 ## How the app uses it
 
