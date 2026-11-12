@@ -69,6 +69,13 @@ The end-to-end walkthrough covers:
 3. In Supabase, add two Vault secrets (**Integrations → Vault**): `app_url` (the deployed address, no trailing slash) and `cron_secret` (the same value as `CRON_SECRET`). Migration 6 already schedules `pamoja-weekly-allocation`, which calls `/api/cron/allocate` hourly on Mondays.
 4. In **Authentication → URL Configuration**, set the Site URL to the deployed address and add `<address>/auth/callback` to the redirect URLs, so sign-up emails link to the live app.
 
+### Install on a phone
+
+PamojaHome is an installable web app. On Android, open the site in Chrome and tap **Install app** (or **⋮ → Add to Home screen**); on iPhone, use Safari's **Share → Add to Home Screen**. It then opens full-screen from its own icon.
+
+- `apps/web/src/app/manifest.ts` is the app manifest; `apps/web/public/icons/` holds the icons, drawn by `python apps/web/scripts/make-icons.py`.
+- `apps/web/public/sw.js` caches only build files, icons and an offline page. Household pages and data always come from the network, so nothing private is stored on the phone.
+
 ## Status
 
 **Built:**
@@ -79,7 +86,8 @@ The end-to-end walkthrough covers:
 - weekly allocation with "Why this is yours";
 - marking chores done, undoing, confirming and disputing;
 - the workload overview;
-- money: adding expenses (equal or custom split), balances, settle-up suggestions, recording payments, and reversing mistakes.
+- money: adding expenses (equal or custom split), balances, settle-up suggestions, recording payments, and reversing mistakes;
+- installing on a phone's home screen, with an offline page.
 
 **Next:** recurring bills, one-off tasks, swaps, days unavailable and vacations, effort voting, move-out, and the organizer's dispute review.
 

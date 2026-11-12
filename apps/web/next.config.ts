@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
     return config;
   },
   poweredByHeader: false,
+  // Put metadata in <head> for every browser, not streamed into <body>: Chrome only reads
+  // the install manifest (and iOS the home-screen icon) from <head>. Our metadata is static.
+  htmlLimitedBots: /.*/,
   async headers() {
     return [{
       source: '/(.*)',
@@ -18,6 +21,10 @@ const nextConfig: NextConfig = {
         { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
         { key: 'Permissions-Policy', value: 'camera=(self), microphone=(), geolocation=()' },
       ],
+    }, {
+      // Always fetch a fresh service worker, so updates reach installed apps.
+      source: '/sw.js',
+      headers: [{ key: 'Cache-Control', value: 'no-cache, no-store, must-revalidate' }],
     }];
   },
 };
